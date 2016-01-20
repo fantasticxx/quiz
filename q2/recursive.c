@@ -16,13 +16,12 @@ char smallest_character(char str[],int left,int right,char c)
     }
 }
 
-int main()
+int main(int argc,char* argv[])
 {
-    char key=NULL;
+    char *key=argv[0];
     char result=NULL;
     char str[5]= {'c','f','j','p','v'};
-    scanf("%c",&key);
-    result=smallest_character(str,0,4,key);
+    result=smallest_character(str,0,4,*key);
     printf("%c\n",result);
     return 0;
 }
