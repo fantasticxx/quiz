@@ -18,7 +18,7 @@ char smallest_character(char str[],int left,int right,char c)
 
 int main(int argc,char* argv[])
 {
-    char *key=argv[0];
+    char *key=argv[1];
     char result=NULL;
     char str[5]= {'c','f','j','p','v'};
     result=smallest_character(str,0,4,*key);
